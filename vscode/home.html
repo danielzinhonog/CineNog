@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="stylehome.css" rel="stylesheet">
-        <title>Pagina Home</title>
-    </head>
-<body>
-  <header> 
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const username = params.get('username');
-        const password = params.get('password');
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylehome.css" rel="stylesheet">
+    <title>Pagina Home</title>
+</head>
 
-        if (username && password) {
-            alert(`Bem-vindo(a), ${username}!`)
-        }
-    </script>
-  <img src="logo.png" class="logo">
-    
-    <ul>
-        <li>Home</li>
-        <li>Serviços</li>
-        <li>Quem Somos</li>
-        <li>Contato</li>
-    </ul>
-    <div class="logincadastro">
-    <p><a href="login.html">Login</a></p> <p>|</p> <p><a href="cadastro.html">Cadastro </a></p>
-    </div>
-    <div id="rodape">Copyright &copy 2023</div>
-	</div>
-</header>
-<div class="conteudo">
-</div>
+<body>
+    <header>
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const username = params.get('username');
+            const password = params.get('password');
+
+            if (username && password) {
+                alert(`Bem-vindo(a), ${username}!`)
+            }
+        </script>
+        <img src="logo.png" class="logo">
+        <ul>
+            <li>Home</li>
+            <li>Serviços</li>
+            <li>Quem Somos</li>
+            <li>Contato</li>
+        </ul>
+        <div class="logincadastro">
+            <p><a href="login.html">Login</a></p> <p>|</p> <p><a href="cadastro.html">Cadastro </a></p>
+        </div>
+    </header>
+    <div class="conteudo"></div>
+    <div class="rodape">Copyright &copy 2023</div>
 </body>
-</html>
