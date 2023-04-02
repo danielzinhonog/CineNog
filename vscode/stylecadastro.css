@@ -1,5 +1,6 @@
 body {
     background-color:#fff;
+    font-family: Arial;
 }
 
 .container {
@@ -60,4 +61,16 @@ input[type=submit]:hover {
     to {
         transform: scale(1.025);
     }
+}
+
+.rodape {
+    display: flex;
+    height: 50px;
+    background-color: darkgreen;
+    color: #fff;
+    justify-content: center;
+    font-family: Arial;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 140px;
 }
