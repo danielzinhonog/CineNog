@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pagina de Login</title>
-        <link rel="stylesheet" type="text/css" href="stylelogin.css">
+        <meta charset="UTF-8">
+        <link href="stylelogin.css" rel="stylesheet">
+        <title>Login</title>
     </head>
     <body>
-        <div class="container">
-            <h1>Login</h1>
-            <form method="post" action="home.html">
-                <label for="username">Nome de Usuario:</label>
-                <input placeholder="Usuario" type="text" id="username" name="username">
-                <label for="password">Senha:</label>
-                <input placeholder="Senha" type="password" id="password" name="password">
-                <input type="submit" value="Entrar">
-            </form>
-        </div>
-        <div class="rodape">Copyright &copy 2023</div>
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="home.html">
+                        <h2>Login</h2>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="username" required>
+                            <label for="">Nome de Usuário</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" required>
+                            <label for="">Senha</label>
+                        </div>
+                        <div class="forget">
+                            <label for=""><input type="checkbox">Lembrar Senha | <a href="#"><strong>Esqueci a Senha</strong></a></label>
+                        </div>
+                        <button>Entrar</button>
+                        <div class="register">
+                            <p>Não Possui uma Conta? <a href="cadastro.html">Cadastre-se</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script>
+            const form = document.querySelector('form');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                window.location.href = form.action;
+            });
+        </script>
+        
     </body>
 </html>
