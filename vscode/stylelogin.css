@@ -27,6 +27,15 @@ section {
     background-color: #FFFFFF;
 }
 
+.form-box img {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}  
+
 h2 {
     font-size: 2em;
     color: black;
