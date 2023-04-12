@@ -123,7 +123,6 @@ h2 {
 	text-align:center;
 }
 
-/* Estilização da tabela de usuários */
 .users-table {
 	width: 100%;
 	margin-top: 20px;
@@ -152,11 +151,10 @@ h2 {
 	background-color: #e6e6e6;
   }
   
-  /* Estilos de fonte e cor a serem ajustados para combinar com o restante do site */
   .users-table th {
 	font-size: 16px;
 	font-weight: bold;
-	color: #333;
+	color: #fff;
 	font-family: Arial, sans-serif;
   }
   
